@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+  </div>
+
+  <div>
+    
+  <button (click)="displayTime('PST')" class="btn" [ngClass]="{'onclick': clicked == 'PST'}">PST</button>
+  <button (click)="displayTime('MST')" class="btn" [ngClass]="{'onclick': clicked == 'MST'}">MST</button>
+  <button (click)="displayTime('CST')" class="btn" [ngClass]="{'onclick': clicked == 'CST'}">CST</button>
+  <button (click)="displayTime('EST')" class="btn" [ngClass]="{'onclick': clicked == 'EST'}">EST</button>
+  <button (click)="displayTime('clear')" class="btn">Clear</button>
+
+  <h1 class="time">{{current_time | date:'medium'}}</h1>
+</div> 
+  </body>
+  
+  </html>

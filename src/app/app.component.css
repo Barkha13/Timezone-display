@@ -1,0 +1,13 @@
+.onclick {
+    background-color: yellow;
+}
+
+.btn{
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 50px;
+}
+.time{
+    margin-left: 100px;
+}
